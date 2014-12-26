@@ -8,8 +8,10 @@
 * vagrant-librarian-chef (Para não necessitar salvar as recipes do chef_solo, usando o arquivo Cheffile)
 
 Instalando os plugins no vagrant:
-    vagrant plugin install vagrant-vbguest
-    vagrant plugin install vagrant-librarian-chef
+```
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-librarian-chef`
+```
 
 ## <a name="o-que-contem"></a>O que contém:
 * Mysql (user: root, pass: '')
