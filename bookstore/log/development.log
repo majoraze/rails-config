@@ -1,0 +1,843 @@
+
+
+Started GET "/" for 10.0.2.2 at 2014-12-26 21:43:06 +0000
+
+ActiveRecord::NoDatabaseError (Unknown database 'bookstore_development'):
+  activerecord (4.2.0) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (24.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2014-12-26 21:43:07 +0000
+
+ActiveRecord::NoDatabaseError (Unknown database 'bookstore_development'):
+  activerecord (4.2.0) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (20.5ms)
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (9.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 10.0.2.2 at 2014-12-26 21:43:38 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (4.7ms)
+Completed 200 OK in 41ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 21:43:45 +0000
+
+ActionController::RoutingError (No route matches [GET] "/books"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (34.4ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (59.8ms)
+
+
+Started GET "/book" for 10.0.2.2 at 2014-12-26 21:43:51 +0000
+
+ActionController::RoutingError (No route matches [GET] "/book"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (18.7ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 21:47:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (23.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateBooks (20141226214614)
+  [1m[35m (2.4ms)[0m  CREATE TABLE `books` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141226214614')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCategories (20141226214641)
+  [1m[35m (1.9ms)[0m  CREATE TABLE `categories` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141226214641')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'bookstore_development'
+  AND fk.table_name = 'books'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `books`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'bookstore_development'
+  AND fk.table_name = 'categories'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `categories`
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 21:47:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books`
+  Rendered books/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 1149ms (Views: 1113.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 21:47:33 +0000
+
+
+Started GET "/books/new" for 10.0.2.2 at 2014-12-26 21:47:37 +0000
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.erb (36.1ms)
+  Rendered books/new.html.erb within layouts/application (67.2ms)
+Completed 200 OK in 307ms (Views: 303.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 10.0.2.2 at 2014-12-26 21:47:45 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EKu5a6vGqnfb97FZrDMAG8XuT1u+oLErYjcw9762jfNx2UtqHYz2fZXnR4zwT550AnzzkIH2RtK1hQ785EDJQQ==", "book"=>{"name"=>"Livro loko"}, "commit"=>"Create Book"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `books` (`name`, `created_at`, `updated_at`) VALUES ('Livro loko', '2014-12-26 21:47:45.180928', '2014-12-26 21:47:45.180928')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/books/1" for 10.0.2.2 at 2014-12-26 21:47:45 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1
+  Rendered books/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 253ms (Views: 229.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 21:47:52 +0000
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 258ms (Views: 257.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 10.0.2.2 at 2014-12-26 21:48:06 +0000
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  Rendered categories/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 251ms (Views: 236.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/categories/new" for 10.0.2.2 at 2014-12-26 21:48:08 +0000
+Processing by CategoriesController#new as HTML
+  Rendered categories/_form.html.erb (2.3ms)
+  Rendered categories/new.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 258ms (Views: 254.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/categories" for 10.0.2.2 at 2014-12-26 21:48:12 +0000
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u6eV6RXe9QCO3pdGuYs7Il/C3AcDRDw8cYh3b4j71DDa1Wfoo5SpCsDOYZPl96VNmFBgzDwSy8WmOklk0g2Qgg==", "category"=>{"name"=>"Ficcao"}, "commit"=>"Create Category"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Ficcao', '2014-12-26 21:48:12.749597', '2014-12-26 21:48:12.749597')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/categories/1
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/categories/1" for 10.0.2.2 at 2014-12-26 21:48:12 +0000
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  Rendered categories/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 232ms (Views: 230.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 10.0.2.2 at 2014-12-26 21:48:16 +0000
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  Rendered categories/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 253ms (Views: 251.8ms | ActiveRecord: 0.2ms)
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books`[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books`[0m
+  [1m[35mBook Load (0.6ms)[0m  SELECT `books`.* FROM `books`
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`name`, `created_at`, `updated_at`) VALUES ('Caralho', '2014-12-26 22:00:12.107909', '2014-12-26 22:00:12.107909')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddCategoryToBooks (20141226220945)
+  [1m[35m (4.2ms)[0m  ALTER TABLE `books` ADD `category_id` int(11)
+  [1m[36m (6.2ms)[0m  [1mCREATE  INDEX `index_books_on_category_id`  ON `books` (`category_id`) [0m
+  [1m[35m (7.6ms)[0m  ALTER TABLE `books` ADD CONSTRAINT `fk_rails_8a8fd7a746`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141226220945')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'bookstore_development'
+  AND fk.table_name = 'books'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `books`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'bookstore_development'
+  AND fk.table_name = 'categories'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `categories`
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT  `books`.* FROM `books`  ORDER BY `books`.`id` ASC LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT  `books`.* FROM `books`  ORDER BY `books`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  `books`.* FROM `books`  ORDER BY `books`.`id` ASC LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  `categories`.* FROM `categories`  ORDER BY `categories`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `books` SET `category_id` = 1, `updated_at` = '2014-12-26 22:16:57.044121' WHERE `books`.`id` = 1
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT  `books`.* FROM `books`  ORDER BY `books`.`id` ASC LIMIT 1
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  `books`.* FROM `books`  ORDER BY `books`.`id` ASC LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT  `categories`.* FROM `categories`  ORDER BY `categories`.`id` ASC LIMIT 1[0m
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`category_id` = 1
+
+
+Started GET "/categories" for 10.0.2.2 at 2014-12-26 22:23:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  Rendered categories/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 502ms (Views: 454.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+
+
+Started GET "/categories" for 10.0.2.2 at 2014-12-26 22:23:12 +0000
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  Rendered categories/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 254ms (Views: 253.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:13 +0000
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books`
+  Rendered books/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 274ms (Views: 246.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 22:23:16 +0000
+
+
+Started GET "/books/1/edit" for 10.0.2.2 at 2014-12-26 22:23:19 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  Rendered books/_form.html.erb (67.1ms)
+  Rendered books/edit.html.erb within layouts/application (97.7ms)
+Completed 200 OK in 368ms (Views: 345.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 22:24:04 +0000
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books`
+  Rendered books/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 239ms (Views: 238.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 22:24:04 +0000
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:04 +0000
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:24:04 +0000
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 22:24:05 +0000
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:24:05 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:05 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:05 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:05 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:05 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:05 +0000
+
+
+Started GET "/books/1" for 10.0.2.2 at 2014-12-26 22:24:06 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  Rendered books/show.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 267ms (Views: 264.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  Rendered books/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 240ms (Views: 238.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 22:24:13 +0000
+
+
+Started GET "/books/1.json" for 10.0.2.2 at 2014-12-26 22:25:00 +0000
+Processing by BooksController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  Rendered books/show.json.jbuilder (17.9ms)
+Completed 200 OK in 80ms (Views: 78.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 22:25:11 +0000
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 251ms (Views: 249.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+
+
+Started GET "/books.json" for 10.0.2.2 at 2014-12-26 22:25:12 +0000
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books`
+  Rendered books/index.json.jbuilder (2.3ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books.json" for 10.0.2.2 at 2014-12-26 22:25:29 +0000
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books`[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  Rendered books/index.json.jbuilder (4.7ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books.json" for 10.0.2.2 at 2014-12-26 22:25:44 +0000
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books`[0m
+  Rendered books/index.json.jbuilder (26.1ms)
+Completed 500 Internal Server Error in 86ms
+
+ActionView::Template::Error (undefined method `name' for :category:Symbol):
+    1: json.array!(@books) do |book|
+    2:   json.extract! book, :id, :name, :category::name
+    3:   json.url book_url(book, format: :json)
+    4: end
+  app/views/books/index.json.jbuilder:2:in `block in _app_views_books_index_json_jbuilder___1135486963277665885_70262973941660'
+  app/views/books/index.json.jbuilder:1:in `_app_views_books_index_json_jbuilder___1135486963277665885_70262973941660'
+
+
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (24.7ms)
+
+
+Started GET "/books.json" for 10.0.2.2 at 2014-12-26 22:25:48 +0000
+Processing by BooksController#index as JSON
+  Rendered books/index.json.jbuilder (1.0ms)
+Completed 500 Internal Server Error in 67ms
+
+SyntaxError (/vagrant/www/bookstore/app/views/books/index.json.jbuilder:2: syntax error, unexpected ':', expecting keyword_end
+  json.extract! book, :id, :name, :category:name
+                                            ^):
+  app/views/books/index.json.jbuilder:2: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+
+
+Started GET "/books.json" for 10.0.2.2 at 2014-12-26 22:25:51 +0000
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books`
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  Rendered books/index.json.jbuilder (4.1ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 22:25:56 +0000
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books`
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 251ms (Views: 250.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 22:25:57 +0000
+
+
+Started GET "/books" for 10.0.2.2 at 2014-12-26 22:32:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.6ms)[0m  SELECT `books`.* FROM `books`
+  Rendered books/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 427ms (Views: 392.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/scaffolds-320d101ad650d068af4a4ea24b133971.css?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/categories-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/books-069e88c06b889877799890854d7f4c40.css?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/application-60956c51d16157428702ad15e63963dd.css?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/books-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/categories-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/application-5a90a28d49a75170729c33d0818404df.js?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 10.0.2.2 at 2014-12-26 22:32:59 +0000
