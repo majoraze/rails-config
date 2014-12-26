@@ -8,7 +8,7 @@
 * vagrant-librarian-chef (Para não necessitar salvar as recipes do chef_solo, usando o arquivo Cheffile)
 
 Instalando os plugins no vagrant:
-```
+``
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-librarian-chef`
 ```
@@ -26,5 +26,5 @@ vagrant plugin install vagrant-librarian-chef`
 
 
 ## <a name="install"></a>Instalação:
-Após dar vagrant up pela primeira vez, é necessário dar o bundle install dentro da pasta do projeto para instalar as gems necessárias para o projeto, inclusive o Rails.
+Após dar vagrant up pela primeira vez, é necessário dar o `bundle install` dentro da pasta do projeto para instalar as gems necessárias, inclusive o Rails.
 
