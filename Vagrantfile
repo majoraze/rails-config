@@ -45,18 +45,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     }
   end
 
-  # Provisioning Script
+  # Synced Folder
   # --------------------
-  # config.vm.provision "shell", path: "src/server/Vagrant.sh"
-
-  #config.vm.provision :shell, :inline => "/home/vagrant/.rbenv/shims/gem install --no-doc --no-ri rails"
-  #config.vm.provision :shell, :inline => "/home/vagrant/.rbenv/bin/rbenv rehash"
-
-
-    # Synced Folder
-   # --------------------
-   config.vm.synced_folder ".", "/vagrant/", :mount_options => [ "dmode=777", "fmode=666" ]
-   #config.vm.synced_folder "./www", "/vagrant/www/", :mount_options => [ "dmode=777", "fmode=666" ]
-
+  config.vm.synced_folder ".", "/vagrant/", :mount_options => [ "dmode=777", "fmode=666" ]
 
 end
