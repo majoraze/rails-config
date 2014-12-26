@@ -7,6 +7,7 @@
 * vagrant-vbguest
 * vagrant-librarian-chef (Para não necessitar salvar as recipes do chef_solo, usando o arquivo Cheffile)
 
+Instalando os plugins no vagrant:
     vagrant plugin install vagrant-vbguest
     vagrant plugin install vagrant-librarian-chef
 
