@@ -8,6 +8,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "ubuntu/trusty64"
 
+  #STATIC IP
+  #config.vm.network :private_network, ip:"192.168.15.1"
+
+  #OR FORWARDED PORTS (NEED TO BIND THE RAILS SERVER)
   config.vm.network :forwarded_port, guest: 80, host: 6080
   config.vm.network :forwarded_port, guest: 3000, host: 3000
 
@@ -30,18 +34,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         rbenv: {
         user_installs: [{
                             user: 'vagrant',
-                            rubies: ["2.1.2"],
-                            global: "2.1.2",
-                            gems: {
-                                "2.1.2" => [
-                                    { name: "bundler" }
-                                ]
-                            }
-                        }]
-        },
+        rubies: ["2.1.2"],
+        global: "2.1.2",
+        gems: {
+        "2.1.2" => [
+            { name: "bundler" }
+    ]
+    }
+    }]
+    },
         mysql: {
-            server_root_password: ''
-        }
+        server_root_password: ''
+    }
     }
   end
 

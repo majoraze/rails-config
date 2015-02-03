@@ -9,5 +9,6 @@
 /.idea
 /tmp
 /cookbooks
+/bookstore/log
 /Cheffile.lock
 /.DS_Store
